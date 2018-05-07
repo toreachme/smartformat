@@ -182,6 +182,15 @@ class Gravity extends CI_Controller {
 							$section->addTextBreak();
 
 						}
+						elseif ($formsfields['type'] == 'checkbox' && $key == '127.1' && $value == 'Yes' || ($formsfields['type'] == 'checkbox' && $key == '127.2' && $value != '')) {
+						//Output Questions
+							$section->addListItem(htmlspecialchars($formsfields['label']), 0, 'question_font', $predefinedMultilevelStyle, 'question_paragraph');
+
+						//Output Answers
+							$section->addText(htmlspecialchars($value), 'answers_font', 'answers_paragraph');
+							$section->addTextBreak();
+							
+						}
 					}
 				}
 

@@ -8,6 +8,7 @@ application/logs/*
 
 !application/*/.htaccess
 
+composer.lock
 texttitleword.docx
 
 user_guide_src/build/*

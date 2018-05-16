@@ -197,7 +197,7 @@ class Gravity extends CI_Controller {
 				$section->addTextBreak();
 				// $section->addTextBreak();
 
-			}
+			}  
 
 
 		$phpWord->getCompatibility()->setOoxmlVersion(15);
